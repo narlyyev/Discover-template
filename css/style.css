@@ -62,11 +62,52 @@ a:hover {
     border-radius: 25px;
 }
 
-.btn-2 {
+.btn-2 , .btn-3 {
     background-color: black;
     padding: 10px 15px 10px 15px;
     color: white;
     border-radius: 25px;
+}
+
+.btn-3 {
+    background-color: blue;
+}
+
+.btn-3:hover {
+    box-shadow: 0 0 10px 3px blue;
+}
+
+.menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    transition: .6s all;
+    width: 100%;
+    z-index: 100;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 18px;
+    border-right: 1px dotted blue;
+    padding-right: 10px;
+}
+
+nav ul li:nth-last-child(1) {
+    border-right: none;
+}
+
+nav ul li:nth-last-child() {
+    margin-right: none;
+}
+
+.template {
+    color: red;
+}
+
+.logo {
+    font-size: 28px;
 }
 
 .border-100 {
@@ -76,4 +117,15 @@ a:hover {
 .box:hover {
     box-shadow: 0 0 10px 5px green;
     transition: 0.6s all;
+}
+
+nav ul li a:hover {
+    box-shadow: none;
+}
+
+nav ul li a:focus {
+    background-color: #10ff00;
+    padding: 7px;
+    color: #004D73;
+    transition: .6s all
 }
