@@ -129,3 +129,16 @@ nav ul li a:focus {
     color: #004D73;
     transition: .6s all
 }
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: 500px;
+}
